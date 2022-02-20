@@ -115,16 +115,16 @@ h5 {
     font-size: var(--xs-font-size);
 }
 
-section>.container {
-    padding: 5rem 0;
-    width: 80%;
-    margin: 2rem auto;
-}
-
 section {
     max-width: 100vw;
     overflow: hidden;
-    padding: 10rem 0 5rem;
+    padding: 10rem 0;
+}
+
+section>.container {
+    padding: 4rem 0;
+    width: 80%;
+    margin: 2rem auto;
 }
 
 section h2 {
@@ -189,11 +189,6 @@ img {
     z-index: -1;
     transition: var(--transition);
 }
-
-
-/* .btn:hover::after {
-    transform: translate(-.5rem, -.5rem);
-} */
 
 .btn:hover::before {
     transform: translate(.5rem, .5rem);
@@ -469,10 +464,13 @@ img {
     overflow: hidden;
 }
 
+.scroll-to-about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .home .scroll-down span {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 3rem;
     color: var(--secondary-color);
     animation: bounce .5s linear infinite;
