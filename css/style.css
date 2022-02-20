@@ -97,12 +97,12 @@ h1 {
 }
 
 h2 {
-    font-size: var(--medium-font-size);
+    font-size: var(--normal-font-size);
     position: relative;
 }
 
 h3 {
-    font-size: var(--small-font-size);
+    font-size: var(--medium-font-size);
 }
 
 h4,
@@ -118,11 +118,11 @@ h5 {
 section {
     max-width: 100vw;
     overflow: hidden;
-    padding: 10rem 0;
+    padding: 5rem 0;
 }
 
 section>.container {
-    padding: 4rem 0;
+    padding: 2rem 0;
     width: 80%;
     margin: 2rem auto;
 }
@@ -133,22 +133,22 @@ section h2 {
 }
 
 .section-title-1 {
-    margin: bottom 2rem;
+    margin-bottom: 2rem;
     background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: .1;
-    font-size: 4.5rem;
+    font-size: var(--large-font-size);
 }
 
 .section-title-2 {
-    transform: translateY(-7rem);
+    transform: translateY(-6rem);
 }
 
 .section-title-2::before {
     content: "";
     position: absolute;
-    width: 5rem;
+    width: 3rem;
     height: .3rem;
     right: 0;
     bottom: 0;
@@ -498,6 +498,49 @@ img {
         border-right: none;
     }
 }
+
+
+/* -----------------------about styling------------------------------- */
+
+section.about {
+    display: grid;
+    place-items: center;
+}
+
+section.about .container {
+    display: flex;
+    flex-direction: column;
+}
+
+section.about h3 {
+    margin: 2.5rem 0;
+    text-align: center;
+}
+
+section.about h3 span {
+    color: var(--secondary-color);
+}
+
+section.about .container p {
+    text-align: center;
+    margin: 2.5rem 0;
+    line-height: 3rem;
+}
+
+section.about .img img {
+    border-top-left-radius: 5.5rem;
+    border-bottom-right-radius: 5.5rem;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+section.about .img img:hover {
+    opacity: 1;
+    transition: var(--transition);
+}
+
+
+/* media screen  */
 
 @media screen and (min-width:991.98px) {
     .header>.container {
