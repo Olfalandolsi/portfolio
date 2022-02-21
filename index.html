@@ -92,7 +92,7 @@
                 </article>
                 <a href="#contact" class="btn">Let's Talk</a>
             </article>
-            <article class="img-area">
+            <a r ticle class="img-area">
                 <div class="outer-circle">
 
                     <span class="material-icons-sharp">
@@ -111,7 +111,7 @@
                 <div class="inner-circle">
                     <img src="./img/profil.jpg" alt="my photo">
                 </div>
-            </article>
+            </a>
         </div>
         <div class="scroll-to-about-section">
             <a href="#about" class="scroll-down">
@@ -124,8 +124,10 @@
     <!-- home section end -->
     <!-- about section start -->
     <section class="about" id="about">
-        <h2 class="section-title-1">About Me</h2>
-        <h3 class="section-title-2">About Me</h3>
+        <div class="section-title">
+            <h2>About Me</h2>
+            <h3>About Me</h3>
+        </div>
         <div class="container">
             <div class="img">
                 <img src="./img/profil.jpg" alt="">
@@ -141,10 +143,147 @@
     </section>
     <!-- about section end -->
     <!-- skills section start -->
-
+    <section class="skills" id="skills">
+        <div class="section-title">
+            <h2>My Skills</h2>
+            <h3>My Skills</h3>
+        </div>
+        <div class="container">
+            <div class="skill">
+                <h3>Frontend Developement</h3>
+                <div class="items">
+                    <div class="item">
+                        <h4>HTML</h4>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress" style="width:0" data-width="90%"></div>
+                            </div>
+                            <h4>90%</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4>CSS</h4>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress" style="width:0" data-width="90%"></div>
+                            </div>
+                            <h4>90%</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4>JavaScript</h4>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress" style="width:0" data-width="60%"></div>
+                            </div>
+                            <h4>60%</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Backend Developement</h3>
+                <div class="items">
+                    <div class="item">
+                        <h4>PHP</h4>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress" style="width:0" data-width="55%"></div>
+                            </div>
+                            <h4>55%</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4>SQL</h4>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress" style="width:0" data-width="65%"></div>
+                            </div>
+                            <h4>65%</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Framework</h3>
+                <div class="items">
+                    <div class="item">
+                        <h4>Laravel</h4>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress" style="width:0" data-width="45%"></div>
+                            </div>
+                            <h4>45%</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4>Vue Js</h4>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress" style="width:0" data-width="45%"></div>
+                            </div>
+                            <h4>45%</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4>Bootstrap</h4>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress" style="width:0" data-width="65%"></div>
+                            </div>
+                            <h4>65%</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- skills section end -->
     <!-- portfolio section start -->
-
+    <section class="portfolio" id="portfolio">
+        <div class="section-title">
+            <h2>My Work</h2>
+            <h3>My Work</h3>
+        </div>
+        <div class="container">
+            <!-- filter menu start  -->
+            <ul class="filter-menu">
+                <li class="filter-item active" data-filter="all">All</li>
+                <li class="filter-item " data-filter="html/css">HTML/CSS</li>
+                <li class="filter-item " data-filter="js">Javascript</li>
+                <li class="filter-item " data-filter="php">PHP</li>
+                <li class="filter-item " data-filter="wordpress">Wordpress</li>
+            </ul>
+            <!-- gallery section start  -->
+            <div class="gallery">
+                <div class="gallery-item " data-filter="php">
+                    <div class="gallery-img">
+                        <img src="img/projets/krisztian-tabori-IyaNci0CyRk-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <div class="gallery-item " data-filter="php">
+                    <div class="gallery-img">
+                        <img src="img/projets/pexels-moose-photos-1037992.jpg" alt="">
+                    </div>
+                </div>
+                <div class="gallery-item " data-filter="js">
+                    <div class="gallery-img">
+                        <img src="img/projets/neven-krcmarek-V4EOZj7g1gw-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <div class="gallery-item " data-filter="wordpress">
+                    <div class="gallery-img">
+                        <img src="img/projets/pexels-daan-stevens-939331.jpg" alt="">
+                    </div>
+                </div>
+                <div class="gallery-item " data-filter="html/css">
+                    <div class="gallery-img">
+                        <img src="img/projets/pexels-lisa-fotios-1161547.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- portfolio section end -->
     <!-- services section start -->
 

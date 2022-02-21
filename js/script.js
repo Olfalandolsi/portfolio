@@ -76,3 +76,41 @@ function typing() {
     setTimeout(typing, 350);
 };
 typing();
+
+// progress bars
+
+let skillSection = document.querySelector('.skills');
+let progress = document.querySelectorAll('.progress-bar .progress');
+window.onscroll = function() {
+    if (window.scrollY >= skillSection.offsetTop - 100) {
+        progress.forEach((el) => {
+            el.style.width = el.dataset.width;
+        });
+
+    }
+}
+
+//filter portfolio section
+
+let filterMenu = document.querySelector(".filter-menu"); // select all menu filter item
+let galleryItem = document.querySelectorAll(".gallery-item");
+
+filterMenu.addEventListener('click', (e) => {
+    if (e.target.classList.contains("filter-item")) {
+        filterMenu.querySelector(".active").classList.remove("active");
+        e.target.classList.add("active");
+
+        let filterValue = e.target.dataset.filter;
+        galleryItem.forEach(element => {
+            if (element.dataset.filter == filterValue || filterValue == "all") {
+                element.classList.remove("hide");
+                element.classList.add("show");
+            } else {
+                element.classList.add("hide");
+
+            }
+
+        });
+    }
+
+})
