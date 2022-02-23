@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
     <!-- font awesome cdn -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- link to lightBox css -->
+    <link rel="stylesheet" href="./css/lightbox.css">
     <!-- link to style.css -->
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
@@ -109,7 +110,7 @@
                     </span>
                 </div>
                 <div class="inner-circle">
-                    <img src="./img/profil.jpg" alt="my photo">
+                    <img src="./images/profil.jpg" alt="my photo">
                 </div>
             </a>
         </div>
@@ -130,14 +131,14 @@
         </div>
         <div class="container">
             <div class="img">
-                <img src="./img/profil.jpg" alt="">
+                <img src="./images/profil.jpg" alt="">
             </div>
             <div class="info">
                 <h3>Hi, I'm <span>olfa landolsi</span></h3>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore porro reiciendis quisquam quam voluptatem impedit temporibus est quos ea magni dicta voluptate dolore eaque, quis consequatur necessitatibus unde ut et fugiat doloribus vitae
                     maiores. Ipsam maxime quod eius et iste?</p>
-                <a href="./img/projets/img1.png" download target="_blank" class="btn btn-green"> Download CV</a>
+                <a href="./images/olfa landolsii cv.pdf" download target="_blank" class="btn btn-green"> Download CV</a>
             </div>
         </div>
     </section>
@@ -258,27 +259,37 @@
             <div class="gallery">
                 <div class="gallery-item " data-filter="php">
                     <div class="gallery-img">
-                        <img src="img/projets/krisztian-tabori-IyaNci0CyRk-unsplash.jpg" alt="">
+                        <a href="images/projets/krisztian-tabori-IyaNci0CyRk-unsplash.jpg" data-lightbox="models" data-title="php project">
+                            <img src="images/projets/krisztian-tabori-IyaNci0CyRk-unsplash.jpg" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="gallery-item " data-filter="php">
                     <div class="gallery-img">
-                        <img src="img/projets/pexels-moose-photos-1037992.jpg" alt="">
+                        <a href="images/projets/pexels-moose-photos-1037992.jpg" data-lightbox="models" data-title="php project">
+                            <img src="images/projets/pexels-moose-photos-1037992.jpg" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="gallery-item " data-filter="js">
                     <div class="gallery-img">
-                        <img src="img/projets/neven-krcmarek-V4EOZj7g1gw-unsplash.jpg" alt="">
+                        <a href="images/projets/neven-krcmarek-V4EOZj7g1gw-unsplash.jpg" data-lightbox="models" data-title="js project">
+                            <img src="images/projets/neven-krcmarek-V4EOZj7g1gw-unsplash.jpg" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="gallery-item " data-filter="wordpress">
                     <div class="gallery-img">
-                        <img src="img/projets/pexels-daan-stevens-939331.jpg" alt="">
+                        <a href="images/projets/pexels-daan-stevens-939331.jpg" data-lightbox="models" data-title="Wordpress project">
+                            <img src="images/projets/pexels-daan-stevens-939331.jpg" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="gallery-item " data-filter="html/css">
                     <div class="gallery-img">
-                        <img src="img/projets/pexels-lisa-fotios-1161547.jpg" alt="">
+                        <a href="images/projets/pexels-lisa-fotios-1161547.jpg" data-lightbox="models" data-title="Wordpress project">
+                            <img src="images/projets/pexels-lisa-fotios-1161547.jpg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -286,7 +297,36 @@
     </section>
     <!-- portfolio section end -->
     <!-- services section start -->
-
+    <section class="services" id="services">
+        <div class="section-title">
+            <h2>My Services</h2>
+            <h3>My Services</h3>
+        </div>
+        <div class="container">
+            <div class="service">
+                <span class="material-icons-sharp">
+                    phone_iphone
+                </span>
+                <h3>App Developement</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, quas?</p>
+            </div>
+            <div class="service">
+                <span class="material-icons-sharp">
+                    devices
+                </span>
+                <h3>Responsive Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, quas?</p>
+            </div>
+            <div class="service">
+                <span class="material-icons-sharp">
+                    devices
+                </span>
+                <h3>Creative Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, quas?</p>
+            </div>
+            <i class="fa fa-pencil fa-lg"></i>
+        </div>
+    </section>
     <!-- services section end -->
     <!-- contact section start -->
 
@@ -296,6 +336,8 @@
     <!-- link ti ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- link to lightbox.js -->
+    <script src="./js/lightbox-plus-jquery.js"></script>
     <!-- link to script.js -->
     <script src="./js/script.js"></script>
 </body>

@@ -12,8 +12,8 @@
     --fourth-color: #6c6a6a;
     /* 30353a*/
     /* ============background colors================== */
-    --body-bg-color: #fefefe;
-    --card-bg-color: #f5f5fa;
+    --body-bg-color: #fefefefb;
+    --card-bg-color: #f1f1f1ed;
     --modal-bg-color: #fff;
     /* ============hover colors================== */
     --hover-color: #918ae5;
@@ -22,7 +22,7 @@
     /* ============box shadow color================== */
     --box-shadow: 0 0 2rem rgb(0 0 0/20%);
     /* ============transition================== */
-    --transition: all .3s ease-in-out;
+    --transition: all .5s ease-in-out;
     /* ============font weight properties================== */
     --font-weight-300: 300;
     --font-weight-400: 400;
@@ -242,7 +242,7 @@ img {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 3;
     background: var(--body-bg-color);
 }
 
@@ -646,7 +646,7 @@ section.portfolio {
 }
 
 .gallery-item.show {
-    animation: fadein .5s ease;
+    animation: fadein 2s ease;
 }
 
 .gallery-item.hide {
@@ -660,6 +660,104 @@ section.portfolio {
     100% {
         opacity: 1;
     }
+}
+
+
+/* -----------------------service styling------------------------------- */
+
+section.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service {
+    text-align: center;
+    padding: 6rem 4rem;
+    line-height: 1.8em;
+    margin-bottom: 10rem;
+    background: var(--card-bg-color);
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.service::before {
+    content: "";
+    border-bottom: 2px solid var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: var(--transition);
+}
+
+.service:hover {
+    transform: translateY(-5%);
+}
+
+.service:hover::before {
+    transform: scaleX(1);
+}
+
+.service span {
+    background: var(--body-bg-color);
+    /* background: red; */
+    color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 3rem;
+    font-size: var(--large-font-size);
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service span::before {
+    content: " ";
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background: var(--card-bg-color);
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: var(--transition);
+}
+
+.service h3 {
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+    position: relative;
+    background: var(--card-bg-color);
+}
+
+.service h3::after {
+    content: " ";
+    width: 2.5rem;
+    height: 2rem;
+    position: absolute;
+    top: -3%;
+    right: -1%;
+    z-index: -2;
+    background: linear-gradient(to right, var(--card-bg-color), var(--secondary-color));
+}
+
+.service h3::before {
+    content: " ";
+    width: 2.5rem;
+    height: 2rem;
+    position: absolute;
+    bottom: -3%;
+    left: -1%;
+    z-index: -2;
+    background: linear-gradient(to left, var(--card-bg-color), var(--secondary-color));
 }
 
 

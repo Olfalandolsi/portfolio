@@ -107,9 +107,7 @@ filterMenu.addEventListener('click', (e) => {
                 element.classList.add("show");
             } else {
                 element.classList.add("hide");
-
             }
-
         });
     }
 
